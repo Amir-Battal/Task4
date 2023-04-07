@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('./assets/Background.png');
+}
+.threel img{
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+nav{
+    width: 100vw;
+    height: 48px;
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 32px;  
+    background-color: white;  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+nav a{
+    text-decoration: none;
+    color: #938C8C;
+    font-family: "Montserrat";
+}
+nav a:hover{
+    color: #282828;
+    font-family: "Montserrat";
+}
+nav a:active{
+    color: #282828;
+    font-family: "Montserrat";
+    text-decoration: underline;
+}
+nav .logo img{
+    width: 75px;
+    height: 19px;
+}
+nav .features{
+    margin-left: 100px;
+}
+nav .features a{
+    margin-left: 30px;
+}
+nav .reg a{
+    margin-left: 10px;
+}
+nav .lang .en{
+    color: #FF8500;
+}
+.arrow {
+    border: solid #938C8C;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3.5px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .flow{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 44vw;
+    height: 45px;
+    margin-top: 33px;
+    margin-left: 20vw;
+    background-color: #282828;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.flow a{
+    margin-top: 12px;
+    text-decoration: none;
+    color: #938C8C;    
+}
+.flow a:hover{
+    color: #FF8500;
+    
+}
+.flow a:active{
+    color: #FF8500;
+    text-decoration: underline;
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 27.5vw;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 17px solid #282828;
+}
+.des{
+    width: 60vw;
+    height: 48px;
+    margin-left: 20vw;
+    flex-direction: column;
+    padding-top: 112px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.elements{
+    margin-top: 60px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.elements  img{
+    width: 92px;
+    height: 92px;
+}
+.elements p{
+    text-align: center;
+    margin-top: 18px;
+}
+.elements .all{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 80px;
+}
+.elements .arrow {
+    border: solid #938C8C;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .des2{
+    width: 60vw;
+    height: 48px;
+    margin-left: 20vw;
+    flex-direction: column;
+    padding-top: 64px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+footer{
+    position: absolute;
+    width: 100vw;
+    height: 213px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #282828;
+    font-family: "Montserrat";
+    margin-top: 82px;
+
+}
+footer .job, .freelance, .blog, .internship, .keep{
+    color: white;
+    margin-top: 32px;
+}
+footer .job{
+    margin-left: 80px;
+}
+footer .keep{
+    margin-right: 80px;
+}
+footer h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+footer p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+footer .end{
+    position: absolute;
+    display: flex;
+    color: white;
+    margin-top: 140px;
+    margin-left: 15px;
+}
+footer .line{
+    width: 630px;
+    border-bottom: 1px solid white;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    nav{
+        height: 28px;
+        padding: 3px 32px;  
+    }
+    nav a{
+        font-size: 8px;        
+    }
+    nav .logo img{
+        margin-top: 7px;
+        width: 42px;
+        height: 10px;
+    }
+    nav .features{
+        margin-left: 25px;
+    }
+    nav .features a{
+        margin-left: 10px;
+    }
+    nav .reg a{
+        margin-left: 1px;
+    }
+    .arrow {
+        padding: 2px;
+    }
+    .flow{
+        width: 40vw;
+        height: 25px;
+        margin-top: 25px;
+        margin-left: 18vw;
+        border-radius: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .flow a{
+        margin-top: 8px;
+        text-decoration: none;
+        color: #938C8C;    
+    }
+    .triangle-up {
+        margin-left: 23vw;
+    }
+
+    .des h1{
+        font-size: 18px
+    }
+    .elements  img{
+        width: 62px;
+        height: 62px;
+    }
+
+    .elements .all{
+        font-size: 10px;
+    }
+    .des2 h1{
+        font-size: 18px
+    }
+    footer{
+        height: 150px;
+        margin-top: 72px;   
+    
+    }
+    footer .job, .freelance, .blog, .internship, .keep{
+        color: white;
+        margin-top: 32px;
+    }
+    footer .job{
+        margin-left: 70px;
+    }
+    footer .keep{
+        margin-right: 70px;
+    }
+    footer h1{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    footer p{
+        font-size: 8px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    footer .end{
+        margin-top: 90px;
+        margin-left: 12px;
+    }
+    footer .line{
+        width: 260px;
+        margin-bottom: 4px;
+    }
+}
+@media screen and (max-width: 400px){
+    .threel img{
+        position: absolute;
+        width: 10px;
+        height: 12px;
+    }
+    .threel img{
+        position: absolute;
+        width: 10px;
+        height: 12px;
+    }
+    nav .flow2{
+        position: absolute;
+        background-color: #282828;
+        width: 50px;
+        height: 70px;
+        margin-left: 65vw;
+        margin-top: 12px;
+        border-radius: 4px;
+    }
+    nav .flow2 .features a{
+        margin: 4px ;
+        padding: 0;
+        display: block;
+    }
+    nav .flow2 .features a:hover{
+        color: #FF8500;
+    }
+    nav .flow2 .features a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+    nav{
+        height: 18px;
+        padding: 1px 32px;  
+        padding-top: 0!important;
+    }
+    nav a{
+        font-size: 4px;        
+    }
+    nav .logo img{
+        margin-top: 0;
+        width: 32px;
+        height: 8px;
+    }
+    nav .features{
+        margin-left: 13px;
+        margin-top: 6px;
+    }
+    nav .reg{
+        margin-left: 10px;
+    }
+    nav .lang{
+        margin-top: 0;
+    }
+    nav .reg a{
+        margin-left: 1px;
+    }
+    .arrow {
+        border-width: 0 1px 1px 0;
+        padding: 1px;
+    }
+    .flow{
+        width: 30vw;
+        height: 15px;
+        margin-top: 30px;
+        margin-left: 34.8vw;
+        border-radius: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+    }
+    .flow a{
+        font-size: 3.5px;
+        margin-top: 3px;
+        text-decoration: none;
+    }
+    .triangle-up {
+        margin-top: 28.5px;
+        margin-left: 62vw;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid #282828;
+    }
+    .elements .arrow {
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 6px;
+        margin-top: 0px;
+      }
+    .des h1{
+        font-size: 10px
+    }
+    .elements  img{
+        width: 32px;
+        height: 32px;
+    }
+    .elements p{
+        margin-top: 8px;
+    }
+    .elements .all{
+        font-size: 5px;
+        margin: 0 0.5px;
+    }
+    .des2 h1{
+        font-size: 10px
+    }
+    footer{
+        height: 120px;
+        margin-top: 72px;   
+    
+    }
+    footer .job, .freelance, .blog, .internship, .keep{
+        margin-top: 32px;
+    }
+    footer .job{
+        margin-left: 20px;
+    }
+    footer .keep{
+        margin-right: 20px;
+    }
+    footer h1{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    footer p{
+        font-size: 5px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    footer .end{
+        margin-top: 90px;
+        margin-left: 8px;
+    }
+    footer .line{
+        width: 120px;
+        margin-bottom: 4px;
+    }
+}
