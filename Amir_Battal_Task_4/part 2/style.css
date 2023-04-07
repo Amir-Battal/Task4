@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('./assets/Background.png');
+}
+.threel img{
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+nav{
+    width: 100vw;
+    height: 48px;
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 32px;  
+    background-color: white;  
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+nav a{
+    text-decoration: none;
+    color: #938C8C;
+    font-family: "Montserrat";
+}
+nav a:hover{
+    color: #282828;
+    font-family: "Montserrat";
+}
+nav a:active{
+    color: #282828;
+    font-family: "Montserrat";
+    text-decoration: underline;
+}
+nav .logo img{
+    width: 75px;
+    height: 19px;
+}
+nav .features{
+    margin-left: 100px;
+}
+nav .features a{
+    margin-left: 30px;
+}
+nav .reg a{
+    margin-left: 10px;
+}
+nav .lang .en{
+    color: #FF8500;
+}
+.arrow {
+    border: solid #938C8C;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3.5px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+.flow{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 44vw;
+    height: 45px;
+    margin-top: 33px;
+    margin-left: 20vw;
+    background-color: #282828;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.flow a{
+    margin-top: 12px;
+    text-decoration: none;
+    color: #938C8C;    
+}
+.flow a:hover{
+    color: #FF8500;
+    
+}
+.flow a:active{
+    color: #FF8500;
+    text-decoration: underline;
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 27.5vw;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 17px solid #282828;
+}
+.des{
+    width: 60vw;
+    height: 48px;
+    margin-left: 20vw;
+    flex-direction: column;
+    padding: 112px 3vw;
+    text-align: center;
+    font-family: "Montserrat";
+}
+.des .par{
+    padding-top: 18px;
+}
+.des .par p{
+    padding-top: 2px;
+    font-size: 16px;
+}
+.des button{
+    width: 180px;
+    height: 32px;
+    margin-top: 18px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.inp input{
+    background: none;
+    border: none;
+    font-family: "Montserrat";
+    border-bottom: 1px solid black;
+    padding-top: 50px;
+    width: 49vw;
+}
+.inp .icon{
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 46.5vw;
+    cursor: pointer;
+}
+.inp .icon .s{
+    margin-left: 12px;
+}
+.inp img{
+    width: 18px;
+    height: 18px;
+}
+.des .cate a{
+    padding: 0 17px ;
+    text-decoration: none;
+    color: #938C8C;
+}
+.des .cate{
+    margin-top: 36px;
+}
+.des .cate .uni{
+    color: black;
+}
+.des .cate .uni span{
+    color: black;
+    border: none;
+    border-bottom: 2px solid #FF8500; 
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 180px;
+    font-family: "Montserrat";
+}
+.card img{
+    width: 36px;
+    height: 36px;
+    margin-top:  0px !important;
+    margin-left: 32px;
+
+}
+.card .first, .card .second, .card .third {
+    width: 300px;
+    height: 270px;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(40, 40, 40, 0.15);
+    border-radius: 10px;
+}
+.card .firstLine{
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+}
+.card .firstLine p{
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 10px;
+}
+.card h3{
+    font-size: 16px;
+    font-style: normal;  
+    margin-left: 32px;  
+    margin-top: 18px;
+}
+.card .data{
+    margin-top: 20px;
+    margin-left: 32px;
+}
+.card .data p{
+    font-size: 12px;
+    margin-top: 18px;
+}
+.card .data p span{
+    color: #938C8C;
+}
+
+.card button{
+    width: 241px;
+    height: 40px;
+    margin-top: 32px;
+    margin-left: 32px;
+    background-color: #282828;
+    color: white;
+    border-radius: 4px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    cursor: pointer;
+}
+.card .data .firstl{
+    display: flex;   
+}
+.card .data .firstl .f{
+    margin-left: 50px;
+}
+.card .data .secondl{
+    display: flex;
+}
+.card .data .secondl .s{
+    margin-left: 24px;
+}
+footer{
+    position: absolute;
+    width: 100vw;
+    height: 213px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #282828;
+    font-family: "Montserrat";
+    margin-top: 82px;
+
+}
+footer .job, .freelance, .blog, .internship, .keep{
+    color: white;
+    margin-top: 32px;
+}
+footer .job{
+    margin-left: 80px;
+}
+footer .keep{
+    margin-right: 80px;
+}
+footer h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+footer p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+footer .end{
+    position: absolute;
+    display: flex;
+    color: white;
+    margin-top: 140px;
+    margin-left: 15px;
+}
+footer .line{
+    width: 630px;
+    border-bottom: 1px solid white;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
+    nav{
+        height: 28px;
+        padding: 3px 32px;  
+    }
+    nav a{
+        font-size: 8px;        
+    }
+    nav .logo img{
+        margin-top: 7px;
+        width: 42px;
+        height: 10px;
+    }
+    nav .features{
+        margin-left: 25px;
+    }
+    nav .features a{
+        margin-left: 10px;
+    }
+    nav .reg a{
+        margin-left: 1px;
+    }
+    .arrow {
+        padding: 2px;
+    }
+    .flow{
+        width: 40vw;
+        height: 25px;
+        margin-top: 25px;
+        margin-left: 18vw;
+        border-radius: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .flow a{
+        margin-top: 8px;
+        text-decoration: none;
+        color: #938C8C;    
+    }
+    .triangle-up {
+        margin-left: 23vw;
+    }
+    .des{
+        width: 60vw;
+        height: 20px;
+        margin-left: 20vw;
+        flex-direction: column;
+        padding: 70px 3vw;
+        text-align: center;
+        font-family: "Montserrat";
+    }
+    .des .par{
+        padding-top: 10px;
+    }
+    .des h1{
+        font-size: 20px
+    }
+    .des .par p{
+        padding-top: 2px;
+        font-size: 10px;
+    }
+    .des button{
+        width: 120px;
+        height: 27px;
+        margin-top: 8px;
+    }
+    .inp input{
+        padding-top: 25px;
+    }
+    .inp .icon{
+        margin-top: 23px;
+        margin-left: 45vw;
+        cursor: pointer;
+    }
+    .inp .icon .s{
+        margin-left: 6px;
+    }
+    .inp img{
+        width: 12px;
+        height: 12px;
+    }
+    .des .cate a{
+        padding: 0 4px ;
+        font-size: 12px;
+    }
+    .des .cate{
+        margin-top: 26px;
+    }
+    .card{
+        width: 100vw;
+        margin-top: 180px;
+    }
+    .card img{
+        width: 26px;
+        height: 26px;
+        margin-left: 8px;
+    
+    }
+    .card .first, .card .second, .card .third {
+        width: 190px;
+        height: 200px;
+    }
+    .card .firstLine{
+        margin-top: 8px;
+    }
+    .card .firstLine p{
+        margin-top: 8px;
+        margin-left: 2px;
+        font-size: 9px;
+    }
+    .card h3{
+        font-size: 12px;
+        margin-left: 12px;  
+        margin-top: 10px;
+    }
+    .card .data{
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+    .card .data p{
+        font-size: 9px;
+        margin-top: 12px;
+    }
+    .card .data .firstl .f{
+        margin-left: 35px;
+    }
+    .card .data .secondl .s{
+        margin-left: 18px;
+    }
+    .card button{
+        width: 120px;
+        height: 25px;
+        margin-top: 20px;
+        margin-left: 38px;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    footer{
+        height: 150px;
+        margin-top: 72px;   
+    
+    }
+    footer .job, .freelance, .blog, .internship, .keep{
+        color: white;
+        margin-top: 32px;
+    }
+    footer .job{
+        margin-left: 70px;
+    }
+    footer .keep{
+        margin-right: 70px;
+    }
+    footer h1{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    footer p{
+        font-size: 8px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    footer .end{
+        margin-top: 90px;
+        margin-left: 12px;
+    }
+    footer .line{
+        width: 260px;
+        margin-bottom: 4px;
+    }
+}
+@media screen and (max-width: 400px){
+    .threel img{
+        position: absolute;
+        width: 10px;
+        height: 12px;
+    }
+    nav .flow2{
+        position: absolute;
+        background-color: #282828;
+        width: 50px;
+        height: 70px;
+        margin-left: 65vw;
+        margin-top: 12px;
+        border-radius: 4px;
+    }
+    nav .flow2 .features a{
+        margin: 4px ;
+        padding: 0;
+        display: block;
+    }
+    nav .flow2 .features a:hover{
+        color: #FF8500;
+    }
+    nav .flow2 .features a:active{
+        color: #FF8500;
+        text-decoration: underline;
+    }
+    nav{
+        height: 18px;
+        padding: 1px 32px;  
+        padding-top: 0!important;
+    }
+    nav a{
+        font-size: 4px;        
+    }
+    nav .logo img{
+        margin-top: 0;
+        width: 32px;
+        height: 8px;
+    }
+    nav .features{
+        margin-left: 13px;
+        margin-top: 6px;
+    }
+    nav .reg{
+        margin-left: 10px;
+    }
+    nav .lang{
+        margin-top: 0;
+    }
+    nav .reg a{
+        margin-left: 1px;
+    }
+    .arrow {
+        border-width: 0 1px 1px 0;
+        padding: 1px;
+    }
+    .flow{
+        width: 30vw;
+        height: 15px;
+        margin-top: 30px;
+        margin-left: 34.8vw;
+        border-radius: 4px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+    }
+    .flow a{
+        font-size: 3.5px;
+        margin-top: 3px;
+        text-decoration: none;
+    }
+    .triangle-up {
+        margin-top: 28.5px;
+        margin-left: 62vw;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid #282828;
+    }
+    .des{
+        width: 60vw;
+        height: 20px;
+        margin-left: 20vw;
+        padding: 50px 3vw;
+    }
+    .des .par{
+        padding-top: 10px;
+    }
+    .des h1{
+        font-size: 13px
+    }
+    .des .par p{
+        padding-top: 2px;
+        font-size: 6px;
+    }
+    .des button{
+        width: 80px;
+        height: 15px;
+        font-size: 7px;
+        margin-top: 8px;
+    }
+    .inp input{
+        padding-top: 20px;
+    }
+    .inp .icon{
+        margin-top: 20px;
+        margin-left: 45vw;
+    }
+    .inp .icon .s{
+        margin-left: 1px;
+    }
+    .inp img{
+        width: 8px;
+        height: 8px;
+    }
+    .des .cate a{
+        padding: 0 1px ;
+        font-size: 6px;
+    }
+    .des .cate{
+        margin-top: 26px;
+    }
+    .card{
+        display: block;
+        width: 100vw;
+        margin-top: 130px;
+        margin-left: 20vw;
+    }
+    .card img{
+        width: 26px;
+        height: 26px;
+        margin-left: 8px;
+    
+    }
+    .card .first, .card .second, .card .third {
+        width: 190px;
+        height: 200px;
+    }
+    .card .firstLine{
+        margin-top: 8px;
+    }
+    .card .firstLine p{
+        margin-top: 8px;
+        margin-left: 2px;
+        font-size: 9px;
+    }
+    .card h3{
+        font-size: 12px;
+        margin-left: 12px;  
+        margin-top: 10px;
+    }
+    .card .data{
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+    .card .data p{
+        font-size: 9px;
+        margin-top: 12px;
+    }
+    .card .data .firstl .f{
+        margin-left: 35px;
+    }
+    .card .data .secondl .s{
+        margin-left: 18px;
+    }
+    .card button{
+        width: 120px;
+        height: 25px;
+        margin-top: 20px;
+        margin-left: 38px;
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    footer{
+        height: 120px;
+        margin-top: 72px;   
+    
+    }
+    footer .job, .freelance, .blog, .internship, .keep{
+        margin-top: 32px;
+    }
+    footer .job{
+        margin-left: 20px;
+    }
+    footer .keep{
+        margin-right: 20px;
+    }
+    footer h1{
+        font-size: 8px;
+        font-weight: 700;
+    }
+    footer p{
+        font-size: 5px;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    footer .end{
+        margin-top: 90px;
+        margin-left: 8px;
+    }
+    footer .line{
+        width: 120px;
+        margin-bottom: 4px;
+    }
+}
